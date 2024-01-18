@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="339dp"
+        android:layout_height="345dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.609" />
+
+    <ImageButton
+        android:id="@+id/buttonBold"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="64dp"
+        android:adjustViewBounds="true"
+        android:onClick="buttonBold"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintEnd_toStartOf="@+id/buttonItalic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bold" />
+
+    <ImageButton
+        android:id="@+id/buttonItalic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="64dp"
+        android:adjustViewBounds="true"
+        android:onClick="buttonItalic"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintEnd_toStartOf="@+id/buttonUnderline"
+        app:layout_constraintStart_toEndOf="@+id/buttonBold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/italic" />
+
+    <ImageButton
+        android:id="@+id/buttonUnderline"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="64dp"
+        android:adjustViewBounds="true"
+        android:onClick="buttonUnderline"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonItalic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/underline" />
+
+    <ImageButton
+        android:id="@+id/buttonLalign"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:onClick="buttonLalign"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCalign"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+        app:srcCompat="@drawable/lalign" />
+
+    <ImageButton
+        android:id="@+id/buttonCalign"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:onClick="buttonCalign"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRalign"
+        app:layout_constraintStart_toEndOf="@+id/buttonLalign"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+        app:srcCompat="@drawable/calign" />
+
+    <ImageButton
+        android:id="@+id/buttonRalign"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:onClick="buttonRalign"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCalign"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+        app:srcCompat="@drawable/ralign" />
+
+    <ImageView
+        android:id="@+id/buttonReset"
+        android:layout_width="123dp"
+        android:layout_height="99dp"
+        android:onClick="buttonReset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
